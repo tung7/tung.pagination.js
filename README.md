@@ -3,7 +3,7 @@ The pagination plug-in for my site
 
 # Usage
 ## import Jquery.js
-version 2.0 above recommended)
+version 2.0 above recommended
 ```
 <script src="jquery-2.1.4.min.js"></script>
 ```
