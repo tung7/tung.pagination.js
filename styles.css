@@ -1,0 +1,70 @@
+/*************pagination start*************/
+.pagination span{
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/* simple - pagination */
+.s_pagination{
+	text-align:center;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+}
+.s_pagination > span {
+	display:inline-block;
+	width:90px;
+	text-align:center;
+	line-height:40px;
+	height:40px;
+	border-radius:4px;
+	background-color:#474E5D;
+	cursor:pointer;
+	color:#fff;
+	margin:0 2px;
+}
+/* simple - pagination  end*/
+
+/* normal - pagination */
+.n_pagination span.pageNum,
+.n_pagination span.prevPage,
+.n_pagination span.nextPage{
+	cursor:pointer;
+	color: #428bca;	
+}
+.n_pagination span.prevPage.disable,
+.n_pagination span.nextPage.disable{
+	color: initial;
+	cursor: not-allowed;
+}
+.n_pagination span{
+	display:inline-block;
+	padding:5px 15px;
+}
+/* normal - pagination  end*/
+/* full - pagination  start*/
+.f_pagination span.pageNum,
+.f_pagination span.firstPage,
+.f_pagination span.lastPage,
+.f_pagination span.prevPage,
+.f_pagination span.nextPage{
+	cursor:pointer;
+	color: #428bca;
+}
+.f_pagination span.disable
+{
+	color: initial;
+	cursor: not-allowed;
+}
+.f_pagination span{
+	display:inline-block;
+	padding:5px 15px;
+}
+.f_pagination input[name=jumpPage]{
+	width:40px;
+	text-align: center;
+}
+
+/* full - pagination  end*/
+/*************pagination end *************/
