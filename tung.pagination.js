@@ -105,14 +105,7 @@
             el.addClass("pagination n_pagination");
         },
         genFull: function(el)  {
-            var _side_width = Math.floor(this.options.showWidth/2);  //当前页左右两边最多显示页码的个数
-
-            var isLeftOmit,isRightOmit;
-            isLeftOmit = this.curPage>_side_width+1 ? true: false;  //当前页码左边是否有省略/ 不是从1开始
-            isRightOmit = this.curPage+_side_width+1 < this.pageSum ? true: false; //当前页码右边是否有省略
-
-            var leftMax = this.options.showWidth > this.pageSum?1:this.pageSum-this.options.showWidth+1;
-
+        
             /* prev part */
             $('<span class="firstPage">首页</span>').attr("data-page",1).appendTo(el);
             $('<span class="prevPage">上一页</span>').attr("data-page",this.curPage-1).appendTo(el);
@@ -159,7 +152,6 @@
                 }
                 if(toNum < 1) toNum = 1;
                 if(toNum > _this.pageSum) toNum = _this.pageSum;
-                console.log(toNum);
                 if(toNum != _this.curPage) {
                     _this.clear();
 
@@ -167,6 +159,7 @@
                     _this._create(_this.options._type);
                     _this.toPage(toNum, _this.baseUrl);
                 }
+                return false;
             });
             if(this.curPage == this.pageSum){
                 el.find(".lastPage").addClass("disable");
