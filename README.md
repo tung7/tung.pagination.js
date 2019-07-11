@@ -1,5 +1,5 @@
 # tung.pagination.js
-The pagination plug-in
+The pagination plugin
 
 # Usage
 ## import Jquery.js
